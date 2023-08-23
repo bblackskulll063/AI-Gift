@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu:wght@300&display=swap');
+@import 'bootstrap/dist/css/bootstrap.css';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+    font-family: 'Ubuntu', sans-serif;
+    
+  }
+
+  body {
+    background: #eeeeee;
+    background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
+    /* padding: 0 16px; */
+  }
+
+  .header {
+    background-color: #322653;
+    margin: auto -16px;
+    padding: 16px 100px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    
+  }
+  
+  .header h1,h4{
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 200;
+  }
+
+ footer {
+    /* position: absolute; */
+    text-align: center;
+    /* bottom: 0; */
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    height: 2.5rem;
+  } 
+  
+  footer p {
+    color: #4e4848;
+  }
+  .home-gifts{
+    margin: 1.5rem 0;
+    padding: 2rem 4rem;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: white ;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow:15px 10px 30px #b3b1b5;
+    /* width: 70%; */
+    /* justify-content: center; */
+
+  }
+
+  .home-heading{
+    color: black;
+    position: relative;
+    left: 50px; 
+    font-weight: bolder;
+    
+  }
+  
+  .home-details input{
+     /* background-color: grey; */
+     text-decoration: none;
+     outline: none;
+     border: none;
+     border-bottom: 1px solid black;
+     border-radius: 0;
+     /* margin: 0px 30px; */
+     width: 70%;
+
+  }
+  .home-details .detail-col{
+    /* display: flex;
+    flex-direction: row; */
+    margin:1rem 0;
+    font-size: larger;
+  }
+
+
+  .button,
+  .button:after {
+    width: 250px;
+    height: 76px;
+    line-height: 78px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    background: linear-gradient(45deg, transparent 5%, #cbe84b 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    box-shadow: 6px 0px 0px #00E6F6;
+    outline: transparent;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    left: 33%;
+    /* box-shadow:10px 10px 20px #b3b1b5; */
+  }
+  
+  .button:after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    
+    content: 'GIFTS Avail';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    clip-path: var(--slice-0);
+  }
+  
+  .button:hover:after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+  }
+  
+  @keyframes glitch {
+    0% {
+      clip-path: var(--slice-1);
+      transform: translate(-20px, -10px);
+    }
+    10% {
+      clip-path: var(--slice-3);
+      transform: translate(10px, 10px);
+    }
+    20% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 10px);
+    }
+    30% {
+      clip-path: var(--slice-3);
+      transform: translate(0px, 5px);
+    }
+    40% {
+      clip-path: var(--slice-2);
+      transform: translate(-5px, 0px);
+    }
+    50% {
+      clip-path: var(--slice-3);
+      transform: translate(5px, 0px);
+    }
+    60% {
+      clip-path: var(--slice-4);
+      transform: translate(5px, 10px);
+    }
+    70% {
+      clip-path: var(--slice-2);
+      transform: translate(-10px, 10px);
+    }
+    80% {
+      clip-path: var(--slice-5);
+      transform: translate(20px, -10px);
+    }
+    90% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 0px);
+    }
+    100% {
+      clip-path: var(--slice-1);
+      transform: translate(0);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .button-49,
+    .button-49:after {
+      width: 200px;
+      height: 86px;
+      line-height: 88px;
+    }
+  }
+
+
