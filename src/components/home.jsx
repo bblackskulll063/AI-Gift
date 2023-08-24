@@ -22,7 +22,7 @@ function Home() {
               method="post"
               novalidate
             >
-              <div className="home-gifts justify-content-center">
+              <div className="home-gifts">
                 <h4 className="mb-3 home-heading">Gift Details</h4>
                 <hr className="my-4" />
                 <div className="row g-3 mx-5 ">
